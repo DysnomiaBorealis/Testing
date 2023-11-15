@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">WasteHub</string>
+
+    <string name="hint_fullName">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phoneNumber">Nomor HP</string>
+    <string name="hint_password">Kata Sandi</string>
+    <string name="hint_confirmPassword">Konfirmasi Kata Sandi</string>
+    <string name="text_btn_register">Daftar Akun</string>
+    <string name="text_btn_verification_otp">Verifikasi</string>
+
+    <string name="error_message_failed_verify_otp">Kode OTP yang dimasukkan salah</string>
+    <string name="text_indicator_resend_otp">Minta kode baru dalam</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_button_already_register">Sudah punya akun? <font color="#558005"><b>Login disini!</b></font></string>
+    <string name="text_button_dont_have_an_account_yet">Belum punya akun? <font color="#558005"><b>Silahkan daftar disini!</b></font></string>
+    <string name="text_sub_head_register">Silahkan daftarkan akun anda untuk menggunakan aplikasi WasteHub</string>
+    <string name="text_button_forgot_password">Lupa password?</string>
+
+    <string name="indicator_register_1"><font color="#252525">1</font><font color="#727476">/3</font></string>
+    <string name="indicator_register_2"><font color="#252525">2</font><font color="#727476">/3</font></string>
+    <string name="indicator_register_3"><font color="#252525">3</font><font color="#727476">/3</font></string>
+    <string name="text_terms_and_privacy">Dengan melakukan registrasi, anda menyetujui <font color="#558005"><b>Persyaratan Penggunaan</b></font> dan <font color="#558005"><b>Kebijakan Privasi</b></font> yang berlaku</string>
+    <string name="text_description_register">Dalam pengelolaan limbah lokal yang efektif dengan pendekatan teknologi</string>
+
+    <string name="text_info_reset_password">Kami telah mengirim link untuk me-reset password anda pada email <font color="#558005"><b>raf*****88@gmail.com</b></font> berikut</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_transaction">Transaksi</string>
+    <string name="title_faq">Bantuan</string>
+    <string name="title_profile">Profil</string>
+    <string name="name_user">Muhammad Rafli Salam</string>
+    <string name="location_user">Bali, Indonesia</string>
+    <string name="text_information_account">Informasi Akun</string>
+    <string name="text_btn_subscribe"><font color="#6E7C96"><u>Aktivasi Langganan</u></font></string>
+    <string name="text_btn_request_pickup">Daur Ulang</string>
+    <string name="text_number_of_points">60</string>
+    <string name="text_points">Points</string>
+    <string name="text_type_account">Akun Reguler</string>
+
+    <string name="category">Category</string>
+    <string name="max_weight">Maks. Xkg</string>
+    <string name="price">Rp xx.xxx</string>
+    <string name="detail_pesanan">Detail Pesanan</string>
+    <string name="tambahkan_catatan_pickup">Tambahkan catatan pickup ...</string>
+    <string name="pemesanan_berhasil">Pemesanan Berhasil</string>
+    <string name="no_transaction_130300000251">No Transaction: 130300000251</string>
+    <string name="text_order_success">Admin akan melakukan konfirmasi pemesanan, dan picker akan datang untuk mengambil sampah sesuai tanggal pickup</string>
+    <string name="request_pickup">Request Pickup</string>
+    <string name="total_biaya">Total Biaya</string>
+    <string name="metode_pembayaran">Metode Pembayaran</string>
+    <string name="kembali_ke_beranda">Kembali ke Beranda</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="lokasi_dan_waktu">Lokasi dan Waktu</string>
+    <string name="edit">Edit</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="tanggal_d_1">Tanggal D+1</string>
+    <string name="alamat_lengkap">Alamat Lengkap</string>
+    <string name="rt">RT</string>
+    <string name="rw">RW</string>
+    <string name="kembali_ke_halaman_sebelumnya">Kembali ke halaman sebelumnya</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="simpan_alamat">Simpan Alamat</string>
+    <string name="dapatkan_titik_koordinat"><u>Dapatkan titik koordinat</u></string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kabupaten_kota">Kabupaten / Kota</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kelurahan">Kelurahan</string>
+    <string name="rw_banjar">RW / Banjar</string>
+    <string name="masukkan_alamat_anda">Masukkan alamat Anda</string>
+
+    <string-array name="data_category">
+        <item>Kecil</item>
+        <item>Sedang</item>
+        <item>Besar</item>
+    </string-array>
+    <string-array name="data_max_weight">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="data_price">
+        <item>10000</item>
+        <item>7000</item>
+        <item>5000</item>
+    </string-array>
+
+    <string-array name="provinsi">
+        <item>Bali</item>
+    </string-array>
+    <string-array name="kabupaten">
+        <item>Karangasem</item>
+    </string-array>
+    <string-array name="kecamatan">
+        <item>Rendang</item>
+    </string-array>
+    <string-array name="kelurahan">
+        <item>Besakih</item>
+    </string-array>
+    <string-array name="rw">
+        <item>RW 1</item>
+        <item>RW 2</item>
+        <item>RW 3</item>
+        <item>RW 4</item>
+        <item>RW 5</item>
+        <item>RW 6</item>
+        <item>RW 7</item>
+        <item>RW 8</item>
+        <item>RW 9</item>
+        <item>RW 10</item>
+    </string-array>
+</resources>

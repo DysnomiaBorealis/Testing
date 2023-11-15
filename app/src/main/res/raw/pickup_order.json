@@ -1,0 +1,1084 @@
+{
+  "data": {
+    "pickupOrders": [
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "confirmed",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "in progress",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "completed",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "cancelled",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "failed",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      },
+      {
+        "_id": "string",
+        "user": {
+          "_id": "user_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "user",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "picker": {
+          "_id": "picker_id_example",
+          "name": "John Doe",
+          "email": "john.doe@example.com",
+          "phoneNumber": "+1234567890",
+          "role": "picker",
+          "avatar": "avatar_url_example",
+          "address": {
+            "note": "Gang 1 A",
+            "subvillage": "Banjar name",
+            "village": "Village Name",
+            "district": "District Name",
+            "regency": "Regency Name",
+            "province": "Province Name"
+          },
+          "location": {
+            "latitude": 0,
+            "longitute": 0
+          },
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z",
+          "isAffiliated": true,
+          "wasteBank": {
+            "_id": "waste_bank_id_example",
+            "name": "Green Waste Bank",
+            "address": {
+              "subvillage": "Banjar name",
+              "village": "Waste Village",
+              "district": "Recycling District",
+              "regency": "Eco Regency",
+              "province": "Sustainability Province"
+            },
+            "contact": "contact@example.com",
+            "adminUser": {},
+            "location": {
+              "latitude": 0,
+              "longitute": 0
+            },
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "wasteType": {
+            "_id": "string",
+            "name": "valuable",
+            "description": "Sampah valuable atau daur ulang adalah ...",
+            "createdAt": "2023-01-15T10:30:00Z",
+            "updatedAt": "2023-01-16T14:45:00Z"
+          },
+          "isActive": false
+        },
+        "pickupDate": "string",
+        "status": "requested",
+        "wasteType": {
+          "_id": "string",
+          "name": "valuable",
+          "description": "Sampah valuable atau daur ulang adalah ...",
+          "createdAt": "2023-01-15T10:30:00Z",
+          "updatedAt": "2023-01-16T14:45:00Z"
+        },
+        "wasteWeight": 0,
+        "wasteVolume": {
+          "_id": "609c22ef3b845b08a661b0bf",
+          "name": "Small",
+          "description": "A small waste volume container.",
+          "minWeight": 10.5,
+          "maxWeight": 20,
+          "pickupFee": 5.99,
+          "createdAt": "2023-10-08T08:00:00Z",
+          "updatedAt": "2023-10-08T10:30:00Z"
+        },
+        "notes": "Ada di tong samping rumah, tolong dipickup",
+        "createdAt": "2023-01-15T10:30:00Z",
+        "updatedAt": "2023-01-16T14:45:00Z"
+      }
+    ]
+  }
+}

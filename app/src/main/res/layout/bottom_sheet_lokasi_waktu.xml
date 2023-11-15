@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bottom_sheet_lokasi_waktu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_bg"
+    android:backgroundTint="#FAFAFA"
+    android:backgroundTintMode="src_over"
+    android:paddingBottom="22dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/lokasi_dan_waktu"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_lokasi"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_square_bg"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lokasi">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/ic_crosshair" />
+
+        <TextView
+            android:id="@+id/text_view_alamat_lengkap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:lines="1"
+            android:text="@string/masukkan_alamat_anda"
+            android:textColor="#1C1C27"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_edit_alamat"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#FDFDFD"
+            android:backgroundTintMode="add"
+            android:text="@string/edit"
+            android:textAllCaps="false"
+            android:textColor="#697586"
+            android:textSize="14sp"
+            app:cornerRadius="84dp"
+            app:icon="@drawable/ic_edit"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="#697586"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="#BCCADB"
+            app:strokeWidth="0.5dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_pilih_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pilih_tanggal"
+        android:textColor="#697586"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_lokasi" />
+
+    <LinearLayout
+        android:id="@+id/layout_radio_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_square_bg_with_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_pilih_tanggal">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radio_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="?attr/colorPrimary"
+            android:text="@string/tanggal_d_1"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_pilih_tanggal" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_detail_pesanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/detail_pesanan"
+        android:textSize="14sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_radio_tanggal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

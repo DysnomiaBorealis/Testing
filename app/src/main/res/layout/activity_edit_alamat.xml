@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.alamat.EditAlamatActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_back_alamat"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00000000"
+        android:contentDescription="@string/kembali_ke_halaman_sebelumnya"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_alamat_lengkap"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/alamat_lengkap"
+        app:boxBackgroundColor="#00000000"
+        app:endIconDrawable="@drawable/ic_clear_text"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back_alamat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_alamat_lengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_provinsi"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_alamat_lengkap">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_fill_provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/provinsi"
+            android:inputType="none"
+            app:simpleItems="@array/provinsi" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_kabupaten"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_provinsi">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_fill_kabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kabupaten_kota"
+            android:inputType="none"
+            app:simpleItems="@array/kabupaten" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_kecamatan"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_kabupaten">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_fill_kecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kecamatan"
+            android:inputType="none"
+            app:simpleItems="@array/kecamatan" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_kelurahan"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_kecamatan">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_fill_kelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kelurahan"
+            android:inputType="none"
+            app:simpleItems="@array/kelurahan" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout_rw"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundColor="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_kelurahan">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_fill_rw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/rw_banjar"
+            android:inputType="none"
+            app:simpleItems="@array/rw" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_dapatkan_koordinat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/dapatkan_titik_koordinat"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_layout_rw" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_lat"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/latitude"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_lng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_dapatkan_koordinat" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_lng"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/longitude"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_lat"
+        app:layout_constraintTop_toBottomOf="@id/tv_dapatkan_koordinat" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_simpan_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/simpan_alamat"
+        android:textSize="16sp"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

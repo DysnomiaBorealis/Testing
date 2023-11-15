@@ -1,0 +1,31 @@
+{
+  "data": {
+    "_id": "USR0001",
+    "name": "Muhammad Rafli Salam",
+    "email": "raflisalam@gmail.com",
+    "phoneNumber": "+6282123456789",
+    "role": "user",
+    "avatar": "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=996&t=st=1698214805~exp=1698215405~hmac=ebe7d494a9f09997e4e0447f504143d4c81e4837daf0f59c1f83c12c17d1f7ac",
+    "address": {
+      "note": "Gang 1 A",
+      "subvillage": "Banjar name",
+      "village": "Village Name",
+      "district": "District Name",
+      "regency": "Regency Name",
+      "province": "Province Name"
+    },
+    "location": {
+      "latitude": 0,
+      "longitute": 0
+    },
+    "createdAt": "2023-01-15T10:30:00Z",
+    "updatedAt": "2023-01-16T14:45:00Z",
+    "membership": {
+      "id": "string",
+      "status": "subscribed",
+      "startDate": "2023-01-15T10:30:00Z",
+      "endDate": "2023-01-15T10:30:00Z",
+      "wasteBank": {}
+    }
+  }
+}

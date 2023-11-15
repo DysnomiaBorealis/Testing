@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_bottom_nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.wastehub.user.presentation.ui.home.HomeScreen"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home_screen" />
+    <fragment
+        android:id="@+id/transactionScreen"
+        android:name="com.wastehub.user.TransactionScreen"
+        android:label="@string/title_transaction"
+        tools:layout="@layout/fragment_transaction_screen" />
+    <fragment
+        android:id="@+id/faqScreen"
+        android:name="com.wastehub.user.FaqScreen"
+        android:label="@string/title_faq"
+        tools:layout="@layout/fragment_faq_screen" />
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="com.wastehub.user.ProfileScreen"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile_screen" />
+</navigation>

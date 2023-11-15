@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.register.screen.OtpVerificationScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/indicator_register_3"
+            android:layout_marginEnd="20dp"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="@id/btnBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btnBack"/>
+
+        <ImageView
+            android:id="@+id/otp_vector"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/otp_verification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBack"/>
+
+        <TextView
+            android:id="@+id/textHeadingVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifikasi Akun"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/green_500"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/otp_vector"
+            app:layout_constraintEnd_toEndOf="@id/otp_vector"
+            app:layout_constraintTop_toBottomOf="@+id/otp_vector" />
+
+        <TextView
+            android:id="@+id/textVerificationMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textHeadingVerification" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textVerificationMessage">
+
+            <EditText
+                android:id="@+id/textInputOTP1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_otp_field_bg"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/textInputOTP2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_otp_field_bg"
+                android:layout_marginStart="11dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/textInputOTP3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:background="@drawable/custom_otp_field_bg"
+                android:layout_marginStart="11dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/textInputOTP4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:background="@drawable/custom_otp_field_bg"
+                android:layout_marginStart="11dp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/textInputOTP5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_otp_field_bg"
+                android:layout_marginStart="11dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <EditText
+                android:id="@+id/textInputOTP6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_marginStart="11dp"
+                android:background="@drawable/custom_otp_field_bg"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:maxLength="1"
+                android:inputType="number"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textResendOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Belum mendapatkan kode OTP?"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/btnResendOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kirim ulang"
+            android:textSize="14sp"
+            android:enabled="true"
+            android:textColor="@color/green_500"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textResendOTP"
+            app:layout_constraintStart_toEndOf="@+id/textResendOTP"
+            app:layout_constraintTop_toTopOf="@+id/textResendOTP" />
+
+        <TextView
+            android:id="@+id/indicatorResendOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@+id/textResendOTP"
+            app:layout_constraintStart_toStartOf="@id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@id/linearLayout"/>
+
+        <Button
+            android:id="@+id/btnVerifyOTP"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:enabled="false"
+            android:text="Verifikasi"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textVerificationMessage"
+            app:layout_constraintStart_toStartOf="@+id/textVerificationMessage"
+            app:layout_constraintTop_toBottomOf="@+id/indicatorResendOTP"
+            app:shapeAppearance="@style/ButtonShape" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

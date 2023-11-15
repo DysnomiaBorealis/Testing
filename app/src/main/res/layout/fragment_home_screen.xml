@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.home.HomeScreen">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/avatar"
+            app:shapeAppearanceOverlay="@style/circleImageShape"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name_user"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toEndOf="@id/avatar_profile"
+            app:layout_constraintTop_toTopOf="@id/avatar_profile"/>
+
+        <ImageView
+            android:id="@+id/ic_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_location_outline"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_user"
+            android:layout_marginStart="2dp"
+            android:textColor="@color/grey_400"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ic_location"
+            app:layout_constraintStart_toEndOf="@+id/ic_location"
+            app:layout_constraintTop_toTopOf="@+id/ic_location" />
+
+        <ImageView
+            android:id="@+id/btnNotification"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_notification_outline"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/avatar_profile"
+            app:layout_constraintBottom_toBottomOf="@id/avatar_profile"/>
+
+        <TextView
+            android:id="@+id/text_information_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_information_account"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/avatar_profile"
+            app:layout_constraintTop_toBottomOf="@+id/avatar_profile" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_type_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:strokeColor="#F0F0F0"
+            app:cardBackgroundColor="@color/white"
+            style="@style/Widget.Material3.CardView.Elevated"
+            app:layout_constraintTop_toBottomOf="@id/text_information_account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/type_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/text_type_account"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/btnSubscribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/text_btn_subscribe"
+                    android:textSize="14sp"
+                    app:layout_constraintTop_toBottomOf="@id/type_account"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/number_of_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_number_of_points"
+                    android:textColor="@color/green_300"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/btnRequestPickup"
+                    app:layout_constraintStart_toStartOf="@id/btnSubscribe"
+                    app:layout_constraintTop_toBottomOf="@id/btnSubscribe" />
+
+                <TextView
+                    android:id="@+id/text_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/text_points"
+                    android:textColor="@color/grey_300"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@id/number_of_points"
+                    app:layout_constraintTop_toTopOf="@id/number_of_points"
+                    app:layout_constraintBottom_toBottomOf="@id/number_of_points"/>
+
+                <ImageView
+                    android:id="@+id/ic_info"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_alert_circle_outline"
+                    app:layout_constraintStart_toEndOf="@+id/text_points"
+                    app:layout_constraintTop_toTopOf="@+id/text_points" />
+
+                <ImageView
+                    android:id="@+id/vector_subscribe"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/vector_subscribe"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/type_account"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRequestPickup"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:textStyle="bold"
+                    android:text="@string/text_btn_request_pickup"
+                    app:icon="@drawable/ic_recycle"
+                    app:shapeAppearance="@style/ButtonShape"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/vector_subscribe"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/layout_waste_stats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/card_view_type_account"
+            app:layout_constraintStart_toStartOf="@id/card_view_type_account"
+            app:layout_constraintEnd_toEndOf="@id/card_view_type_account"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="5dp"
+                app:strokeColor="#9EDEEE"
+                app:cardBackgroundColor="#9EDEEE">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/vector_waste_organic"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/vector_waste_organic"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_total_organic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_300"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/vector_waste_organic"
+                        app:layout_constraintTop_toBottomOf="@+id/vector_waste_organic" />
+
+                    <TextView
+                        android:id="@+id/total_waste_organic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120 kg"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/text_total_organic"
+                        app:layout_constraintTop_toBottomOf="@+id/text_total_organic" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:strokeColor="#DBEBBC"
+                app:cardBackgroundColor="#DBEBBC">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/vector_waste_residue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/vector_waste_residue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_total_residue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_300"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/vector_waste_residue"
+                        app:layout_constraintTop_toBottomOf="@+id/vector_waste_residue" />
+
+                    <TextView
+                        android:id="@+id/total_waste_residue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80 kg"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/text_total_residue"
+                        app:layout_constraintTop_toBottomOf="@+id/text_total_residue" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                style="@style/Widget.Material3.CardView.Elevated"
+                app:cardCornerRadius="5dp"
+                app:strokeColor="#FEEED4"
+                app:cardBackgroundColor="#FEEED4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/vector_waste_valuable"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="11dp"
+                        android:src="@drawable/vector_waste_valuable"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_total_valuable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/grey_300"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/vector_waste_valuable"
+                        app:layout_constraintTop_toBottomOf="@+id/vector_waste_valuable" />
+
+                    <TextView
+                        android:id="@+id/total_waste_valuable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100 kg"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/text_total_valuable"
+                        app:layout_constraintTop_toBottomOf="@+id/text_total_valuable" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/layout_waste_stats">
+
+            <TextView
+                android:id="@+id/text_history_waste_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Transaksi"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/text_color"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/btnMoreWasteRecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selengkapnya"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/green_300"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/text_history_waste_record"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_history_waste_record" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_waste_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/text_history_waste_record"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".presentation.ui.login.LoginActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/wastehub_logo"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/textHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Masuk"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <TextView
+            android:id="@+id/textSubHeading"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Silahkan masuk untuk menggunakan aplikasi WasteHub"
+            android:textSize="14sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textHeading"
+            app:layout_constraintTop_toBottomOf="@id/textHeading" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayoutPhoneNumber"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_phoneNumber"
+            app:boxBackgroundColor="@color/grey_100"
+            app:endIconDrawable="@drawable/ic_clear_text"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textSubHeading"
+            app:prefixText="+62"
+            app:prefixTextColor="@color/green_500"
+            app:startIconDrawable="@drawable/ic_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textLayoutPassword"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:boxBackgroundColor="@color/grey_100"
+            android:hint="@string/hint_password"
+            app:endIconDrawable="@drawable/custom_password_icon_toggle"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/textLayoutPhoneNumber"
+            app:layout_constraintStart_toStartOf="@+id/textLayoutPhoneNumber"
+            app:layout_constraintTop_toBottomOf="@id/textLayoutPhoneNumber"
+            app:startIconDrawable="@drawable/ic_unlock">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/green_500"
+            android:text="@string/text_button_forgot_password"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textLayoutPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textLayoutPassword" />
+
+        <include
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/textLayoutPassword"
+            app:layout_constraintStart_toStartOf="@+id/textLayoutPassword"
+            app:layout_constraintTop_toBottomOf="@+id/btnForgotPassword"
+            layout="@layout/button_progress"/>
+
+        <TextView
+            android:id="@+id/btnDontHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:enabled="true"
+            android:text="@string/text_button_dont_have_an_account_yet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            app:layout_constraintStart_toStartOf="@id/btnLogin"
+            app:layout_constraintEnd_toEndOf="@id/btnLogin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

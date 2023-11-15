@@ -1,0 +1,170 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="#F0F0F0"
+    app:cardBackgroundColor="@color/white"
+    style="@style/Widget.Material3.CardView.Elevated">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_recycling"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="29/09/2023"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="@+id/icon" />
+
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="Pesanan Selesai"
+            android:textColor="#219653"
+            app:drawableStartCompat="@drawable/ic_status_success"
+            app:layout_constraintBottom_toBottomOf="@+id/icon"
+            app:layout_constraintStart_toStartOf="@+id/date" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            style="@style/Widget.Material3.CardView.Outlined"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/icon"
+            app:strokeColor="#F0F0F0">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/icon_trash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_trash"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/trash_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Sampah besar"
+                    android:textColor="@color/text_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_trash"
+                    app:layout_constraintStart_toEndOf="@+id/icon_trash"
+                    app:layout_constraintTop_toTopOf="@+id/icon_trash" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/line"
+                    app:layout_constraintTop_toBottomOf="@+id/icon_trash" />
+
+                <ImageView
+                    android:id="@+id/icon_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_profile"
+                    app:layout_constraintEnd_toEndOf="@+id/icon_trash"
+                    app:layout_constraintStart_toStartOf="@+id/icon_trash"
+                    app:layout_constraintTop_toBottomOf="@+id/line1" />
+
+                <TextView
+                    android:id="@+id/person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Ferdiansyah"
+                    android:textColor="@color/text_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_person"
+                    app:layout_constraintStart_toEndOf="@+id/icon_person"
+                    app:layout_constraintTop_toTopOf="@+id/icon_person" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/line"
+                    app:layout_constraintTop_toBottomOf="@+id/icon_person" />
+
+                <ImageView
+                    android:id="@+id/icon_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_wallet"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/icon_person"
+                    app:layout_constraintStart_toStartOf="@+id/icon_person"
+                    app:layout_constraintTop_toBottomOf="@+id/line2" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="Rp 70,000"
+                    android:textColor="@color/text_color"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_money"
+                    app:layout_constraintStart_toEndOf="@+id/icon_money"
+                    app:layout_constraintTop_toTopOf="@+id/icon_money" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnVerifyOTP"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:text="Rincian Transaksi"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+            app:layout_constraintStart_toStartOf="@+id/materialCardView"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView"
+            app:shapeAppearance="@style/ButtonShape" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

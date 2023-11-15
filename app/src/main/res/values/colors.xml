@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //WasteHub color palette
+    <color name="blue_300">#1cb9e1</color>
+    <color name="green_200">#BACC7D</color>
+    <color name="green_300">#a4cb55</color>
+    <color name="green_500">#558005</color>
+    <color name="yellow_500">#f8b544</color>
+    <color name="grey_400">#727476</color>
+    <color name="grey_300">#9b9fa2</color>
+    <color name="grey_200">#D8D8D8</color>
+    <color name="grey_100">#f1f1f1</color>
+    <color name="yellow_300">#f1c232</color>
+    <color name="red_300">#EF4444</color>
+
+    <color name="text_color">#252525</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

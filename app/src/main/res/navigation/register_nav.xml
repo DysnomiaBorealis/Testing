@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_nav"
+    app:startDestination="@id/registerScreen">
+
+
+    <fragment
+        android:id="@+id/registerScreen"
+        android:name="com.wastehub.user.presentation.ui.register.screen.RegisterScreen"
+        android:label="fragment_register_screen"
+        tools:layout="@layout/fragment_register_screen" >
+        <action
+            android:id="@+id/action_registerScreen_to_formInformationScreen"
+            app:destination="@id/formInformationScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/formInformationScreen"
+        android:name="com.wastehub.user.presentation.ui.register.screen.FormInformationScreen"
+        android:label="fragment_form_information_screen"
+        tools:layout="@layout/fragment_form_information_screen" >
+        <action
+            android:id="@+id/action_formInformationScreen_to_formPasswordScreen"
+            app:destination="@id/formPasswordScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/formPasswordScreen"
+        android:name="com.wastehub.user.presentation.ui.register.screen.FormPasswordScreen"
+        android:label="fragment_form_password_screen"
+        tools:layout="@layout/fragment_form_password_screen" >
+        <action
+            android:id="@+id/action_formPasswordScreen_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationScreen"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpVerificationScreen"
+        android:name="com.wastehub.user.presentation.ui.register.screen.OtpVerificationScreen"
+        android:label="fragment_otp_verification"
+        tools:layout="@layout/fragment_otp_verification_screen" />
+</navigation>
