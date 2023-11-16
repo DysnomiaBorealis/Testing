@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_faq_screen" />
     <fragment
         android:id="@+id/profileScreen"
-        android:name="com.wastehub.user.ProfileScreen"
+        android:name="com.wastehub.user.presentation.ui.profile.ProfileScreen"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile_screen" />
 </navigation>

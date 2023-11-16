@@ -1,4 +1,4 @@
-package com.wastehub.user
+package com.wastehub.user.presentation.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +8,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.wastehub.user.R
 import com.wastehub.user.databinding.FragmentProfileScreenBinding
 import com.wastehub.user.presentation.ui.login.LoginActivity
-import com.wastehub.user.presentation.viewmodel.ChangePasswordViewModel
+import com.wastehub.user.presentation.viewmodel.profile.changepassword.ChangePasswordScreenViewModel
 import com.wastehub.user.presentation.viewmodel.session.SessionViewModel
 import com.wastehub.user.ui.customview.ButtonCustom
 import dagger.hilt.android.AndroidEntryPoint
@@ -19,7 +20,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class ProfileScreen : Fragment() {
 
     private val session: SessionViewModel by viewModels()
-    private val changePassword: ChangePasswordViewModel by viewModels()
+    private val changePassword: ChangePasswordScreenViewModel by viewModels()
 
     private var _binding: FragmentProfileScreenBinding? = null
     private val binding get() = _binding!!

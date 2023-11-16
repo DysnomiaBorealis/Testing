@@ -68,6 +68,14 @@
     <string name="kelurahan">Kelurahan</string>
     <string name="rw_banjar">RW / Banjar</string>
     <string name="masukkan_alamat_anda">Masukkan alamat Anda</string>
+    <string name="hint_email2">Email@gmail.com</string>
+    <string name="hint_address">Jl. Iskandarsyah II No.2, RT.1/RW.5, Melawai, Kec. Kby. Baru, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12160</string>
+    <string name="koordinat">Koordinat</string>
+    <string name="hint_current_password">Kata Sandi Saat Ini</string>
+    <string name="text_sub_head_change_password">Mohon Isi kata Sandi Baru Anda dibawah ini</string>
+    <string name="text_sub_head_change_password2">Kata Sandi Minimal 8 Karakter</string>
+    <string name="hint_new_password">Kata Sandi Baru</string>
+
 
     <string-array name="data_category">
         <item>Kecil</item>
